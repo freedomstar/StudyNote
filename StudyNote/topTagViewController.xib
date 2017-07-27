@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="topTagViewController">
+            <connections>
+                <outlet property="scrollView" destination="ld4-FF-im9" id="25w-ZY-F8h"/>
+                <outlet property="view" destination="iN0-l3-epB" id="zbX-wq-vLm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-FF-im9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ld4-FF-im9" secondAttribute="trailing" id="5FO-je-yxY"/>
+                <constraint firstItem="ld4-FF-im9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gR7-6i-Jdd"/>
+                <constraint firstAttribute="bottom" secondItem="ld4-FF-im9" secondAttribute="bottom" id="jIe-OR-cD7"/>
+                <constraint firstItem="ld4-FF-im9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yZM-S5-qdU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-142.5" y="1"/>
+        </view>
+    </objects>
+</document>

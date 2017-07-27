@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="advertisementViewController">
+            <connections>
+                <outlet property="pageControl" destination="UL5-Mq-M2s" id="y4b-V9-GD8"/>
+                <outlet property="scrollView" destination="eWK-gd-MWM" id="uWc-Uf-69c"/>
+                <outlet property="titleLable" destination="cFF-xd-SBa" id="irJ-dD-AKV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWK-gd-MWM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
+                </scrollView>
+                <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQA-Pv-uAQ">
+                    <rect key="frame" x="0.0" y="204" width="375" height="20"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="lhp-ee-u0B"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFX-HP-5Lr">
+                    <rect key="frame" x="300" y="204" width="75" height="20"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="UL5-Mq-M2s">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="20"/>
+                            <color key="pageIndicatorTintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="currentPageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </pageControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3p5-4z-fZu"/>
+                        <constraint firstAttribute="trailing" secondItem="UL5-Mq-M2s" secondAttribute="trailing" id="3vE-kd-M2V"/>
+                        <constraint firstAttribute="width" constant="75" id="72K-n9-ZLY"/>
+                        <constraint firstAttribute="bottom" secondItem="UL5-Mq-M2s" secondAttribute="bottom" id="c4l-af-EFd"/>
+                        <constraint firstItem="UL5-Mq-M2s" firstAttribute="top" secondItem="hFX-HP-5Lr" secondAttribute="top" id="i8t-AW-abw"/>
+                        <constraint firstItem="UL5-Mq-M2s" firstAttribute="leading" secondItem="hFX-HP-5Lr" secondAttribute="leading" id="rwi-sM-4Og"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsb-mZ-ln5">
+                    <rect key="frame" x="5" y="204" width="22.5" height="20"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFF-xd-SBa">
+                            <rect key="frame" x="0.0" y="0.0" width="22.5" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cFF-xd-SBa" secondAttribute="trailing" id="1IN-M8-d55"/>
+                        <constraint firstAttribute="height" constant="20" id="J5K-vX-log"/>
+                        <constraint firstItem="cFF-xd-SBa" firstAttribute="top" secondItem="Gsb-mZ-ln5" secondAttribute="top" id="mSh-Wb-6kd"/>
+                        <constraint firstAttribute="bottom" secondItem="cFF-xd-SBa" secondAttribute="bottom" id="nuj-gH-u6q"/>
+                        <constraint firstItem="cFF-xd-SBa" firstAttribute="leading" secondItem="Gsb-mZ-ln5" secondAttribute="leading" id="vUE-fF-JdW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lQA-Pv-uAQ" secondAttribute="bottom" id="D3g-0Z-4Hu"/>
+                <constraint firstItem="eWK-gd-MWM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FQg-i9-0iJ"/>
+                <constraint firstItem="hFX-HP-5Lr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gsb-mZ-ln5" secondAttribute="trailing" priority="750" constant="5" id="K9j-bN-JXG"/>
+                <constraint firstAttribute="trailing" secondItem="eWK-gd-MWM" secondAttribute="trailing" id="Oki-Ks-AwY"/>
+                <constraint firstAttribute="trailing" secondItem="lQA-Pv-uAQ" secondAttribute="trailing" id="Pbg-WH-cFd"/>
+                <constraint firstItem="eWK-gd-MWM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YTT-Xx-AMh"/>
+                <constraint firstAttribute="trailing" secondItem="hFX-HP-5Lr" secondAttribute="trailing" id="enV-c7-zvj"/>
+                <constraint firstAttribute="bottom" secondItem="Gsb-mZ-ln5" secondAttribute="bottom" id="gqr-Rt-UN5"/>
+                <constraint firstItem="Gsb-mZ-ln5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="icQ-ac-9Wc"/>
+                <constraint firstAttribute="bottom" secondItem="eWK-gd-MWM" secondAttribute="bottom" id="lPz-sK-JQL"/>
+                <constraint firstAttribute="bottom" secondItem="hFX-HP-5Lr" secondAttribute="bottom" id="pgf-TE-dL2"/>
+                <constraint firstItem="lQA-Pv-uAQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x6J-yF-d9u"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-43.5" y="-554"/>
+        </view>
+    </objects>
+</document>

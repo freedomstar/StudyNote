@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>education</key>
+	<array>
+		<string>无</string>
+		<string>小学</string>
+		<string>初中</string>
+		<string>高中</string>
+		<string>大专</string>
+		<string>本科</string>
+		<string>研究生</string>
+		<string>博士</string>
+	</array>
+</dict>
+</plist>
